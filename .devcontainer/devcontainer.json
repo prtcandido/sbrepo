@@ -1,12 +1,9 @@
 {
-    "name": "Java 17 Spring Boot",
+    "name": "Java 17 + Docker",
     "image": "mcr.microsoft.com/devcontainers/java:17",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "vscjava.vscode-java-pack",
-                "vmware.vscode-boot-dev-pack"
-            ]
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
         }
     }
 }
